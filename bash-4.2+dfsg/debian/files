@@ -1,0 +1,4 @@
+bash-doc_4.2+dfsg-0.1+deb7u3_all.deb doc optional
+bash_4.2+dfsg-0.1+deb7u3_amd64.deb shells required
+bash-builtins_4.2+dfsg-0.1+deb7u3_amd64.deb utils optional
+bash-static_4.2+dfsg-0.1+deb7u3_amd64.deb shells optional

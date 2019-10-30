@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Thu, 25 Sep 2014 21:43:01 +0200
+Source: bash
+Binary: bash bash-static bash-builtins bash-doc
+Architecture: all amd64
+Version: 4.2+dfsg-0.1+deb7u3
+Distribution: wheezy-security
+Urgency: high
+Maintainer: Matthias Klose <doko@debian.org>
+Changed-By: Salvatore Bonaccorso <carnil@debian.org>
+Description: 
+ bash       - GNU Bourne Again SHell
+ bash-builtins - Bash loadable builtins - headers & examples
+ bash-doc   - Documentation and examples for the The GNU Bourne Again SHell
+ bash-static - GNU Bourne Again SHell (static version)
+Changes: 
+ bash (4.2+dfsg-0.1+deb7u3) wheezy-security; urgency=high
+ .
+   * Non-maintainer upload by the Security Team.
+   * Add variables-affix.patch patch.
+     Apply patch from Florian Weimer to add prefix and suffix for environment
+     variable names which contain shell functions.
+   * Add parser-oob.patch patch.
+     Fixes two out-of-bound array accesses in the bash parser.
+Checksums-Sha1: 
+ b0237111a08b25f7d6a49e22136253b699975b52 695862 bash-doc_4.2+dfsg-0.1+deb7u3_all.deb
+ 0db54583664e235892dbc8b75bb288bfaca8b2af 1498964 bash_4.2+dfsg-0.1+deb7u3_amd64.deb
+ 81214f3da82ea1f33af1f1b16e089b46a827fd61 112252 bash-builtins_4.2+dfsg-0.1+deb7u3_amd64.deb
+ e13d13f15e3a3f4eea945c28008d0761e8f0cc3f 940466 bash-static_4.2+dfsg-0.1+deb7u3_amd64.deb
+Checksums-Sha256: 
+ 8455d2ae66d56e8d22547c73833d0368db1e7af535947ed8905127592281e588 695862 bash-doc_4.2+dfsg-0.1+deb7u3_all.deb
+ 0fc84366a3b21e64c1c3ae4e2eabc3f3d71a8b6057b611052e6607c1ffaa71ae 1498964 bash_4.2+dfsg-0.1+deb7u3_amd64.deb
+ 06221ab4ad4f5891f3cd04c89b542c177bff4c927262797dd03227100556a6f7 112252 bash-builtins_4.2+dfsg-0.1+deb7u3_amd64.deb
+ 8dd3fab6595eaec0307419261936f34301e433eb1efe7cf3efe7d0c19a898b32 940466 bash-static_4.2+dfsg-0.1+deb7u3_amd64.deb
+Files: 
+ 85b4eafaebfa30ffd26aa7675770a4eb 695862 doc optional bash-doc_4.2+dfsg-0.1+deb7u3_all.deb
+ d26a9c223818ff16d8aacb6a52329278 1498964 shells required bash_4.2+dfsg-0.1+deb7u3_amd64.deb
+ 6e14e6b8781116913da6be3d0e0ff45a 112252 utils optional bash-builtins_4.2+dfsg-0.1+deb7u3_amd64.deb
+ c0f4b676ec6dfb03866aef6f631e7d2f 940466 shells optional bash-static_4.2+dfsg-0.1+deb7u3_amd64.deb

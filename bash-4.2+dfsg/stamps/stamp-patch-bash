@@ -1,0 +1,177 @@
+Patches applied in this version:
+
+bash42-001.diff:
+  bash-4.2 upstream patch 001
+
+bash42-002.diff:
+  bash-4.2 upstream patch 002
+
+bash42-003.diff:
+  bash-4.2 upstream patch 003
+
+bash42-004.diff:
+  bash-4.2 upstream patch 004
+
+bash42-005.diff:
+  bash-4.2 upstream patch 005
+
+bash42-006.diff:
+  bash-4.2 upstream patch 006
+
+bash42-007.diff:
+  bash-4.2 upstream patch 007
+
+bash42-008.diff:
+  bash-4.2 upstream patch 008
+
+bash42-009.diff:
+  bash-4.2 upstream patch 009
+
+bash42-010.diff:
+  bash-4.2 upstream patch 010
+
+bash42-011.diff:
+
+bash42-012.diff:
+
+bash42-013.diff:
+
+bash42-014.diff:
+
+bash42-015.diff:
+
+bash42-016.diff:
+
+bash42-017.diff:
+
+bash42-018.diff:
+
+bash42-019.diff:
+
+bash42-020.diff:
+
+bash42-021.diff:
+
+bash42-022.diff:
+
+bash42-023.diff:
+
+bash42-024.diff:
+
+bash42-025.diff:
+
+bash42-026.diff:
+
+bash42-027.diff:
+
+bash42-028.diff:
+
+bash42-029.diff:
+
+bash42-030.diff:
+
+bash42-031.diff:
+
+bash42-032.diff:
+
+bash42-033.diff:
+
+bash42-034.diff:
+
+bash42-035.diff:
+
+bash42-036.diff:
+
+bash42-037.diff:
+
+bashbug-editor.diff:
+  send bug reports to Debian bash maintainer too.
+
+deb-bash-config.diff:
+  Changed compile time configuration options:
+  
+  - Set the default path to comply with Debian policy
+  
+  - Enable System-wide .bashrc file for interactive shells.
+  
+  - Enable System-wide .bash.logout  file for interactive shells.
+  
+  - make non-interactive shells begun with argv[0][0] == '-'
+  run the startup files when not in posix mode.
+  
+  - try to check whether bash is being run by sshd and source
+  the .bashrc if so (like the rshd behavior).
+  
+  - don't define a default DEFAULT_MAIL_DIRECTORY, because it
+  can cause a timeout on NFS mounts.
+
+deb-examples.diff:
+  document readline header location on Debian systems
+
+man-arithmetic.diff:
+  document deprecated syntax for arithmetic evaluation.
+
+man-fignore.diff:
+  bash(1): mention quoting when assigning to FIGNORE
+
+man-bashrc.diff:
+  document /etc/bash.bashrc in bash man page
+
+man-bashlogout.diff:
+  document /etc/bash.bashrc in bash man page
+
+man-substring-exp.diff:
+  Clarify documentation about substring expansion
+
+man-nocaseglob.diff:
+  Clarify documentation about case-insensitive pathname expansion
+
+man-test.diff:
+  document conditional file expressions acting on the target of
+  symbolic links as well (except -h, -L).
+
+man-test2.diff:
+  Document handling of parameters of the test builtin.
+
+privmode.diff:
+  XXX missing description
+  
+  Comment from Chet Ramey <chet@nike.ins.cwru.edu>:
+  
+  Nope.  This will allow setuid scripts if not called as `sh' and not 
+  called with the -p option.  I won't install this. 
+
+rbash-manpage.diff:
+  doc/rbash.1: fix bash(1) reference
+
+bash-default-editor.diff:
+  Use `command -v editor`, as an editor, if available.
+
+bash-subst-param-length.diff:
+
+pgrp-pipe.diff:
+  Define PGRP_PIPE to avoid race condition.
+
+input-err.diff:
+  Define PGRP_PIPE to avoid race condition.
+
+exec-redirections-man.diff:
+
+bash-aliases-repeat.diff:
+  Fix bug in Bash_aliases example.
+
+no-brk-caching.diff:
+  Don't cache the value of brk between sbrk calls.
+
+hardening-formatstring.diff:
+
+unicode-escape-bug.diff:
+  Fix string expansion: \u and \U for code points U+0080 to U+00FF
+
+CVE-2014-6271.diff:
+
+CVE-2014-7169.diff:
+
+variables-affix.patch:
+
+parser-oob.patch:
